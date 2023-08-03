@@ -10,6 +10,12 @@ console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
 
+const newHtml = ['toad', 'frog', 'salamander'];
+
+for (let i = 0; i < newHtml.length; i++) {
+  ulEl.children[i].innerHTML = newHtml[i];
+}
+
 // --- --- --- --- --- ---
 
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
